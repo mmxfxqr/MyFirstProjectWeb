@@ -1,0 +1,216 @@
+/* Импорт шрифта Roboto с Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Стили для всего документа */
+body {
+    background-color: #f1f1f1; /* Фон страницы */
+    color: #0f141e; /* Цвет текста */
+
+    font-size: 16px; /* Размер шрифта */
+    font-weight: normal; /* Нормальное начертание */
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto, если доступен, иначе Sans-serif */
+}
+
+/* Стили для гиперссылок */
+a {
+    color: #0f141e; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* При наведении на ссылку, добавляем подчеркивание */
+a:hover {
+    text-decoration: underline;
+}
+
+/* При активации (нажатии) ссылки, меняем цвет на синий */
+a:active {
+    color: blue;
+}
+
+/* При просмотре посещенных ссылок, меняем цвет на серый */
+a:visited {
+    color: #86898f;
+}
+
+/* Стили для изображения-аватара */
+.avatar {
+    width: 250px; /* Ширина аватара */
+    border-radius: 28px; /* Скругленные углы */
+    box-shadow: 4px 4px 14px rgba(0,0,0,0); /* Тень */
+}
+
+/* Стили для секции "info" */
+.info {
+    display: flex; /* Отображение в виде строки (горизонтально) */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* При ширине экрана менее 700px, применяются следующие стили */
+@media(max-width: 700px) {
+    .info {
+        text-align: center; /* Выравнивание по центру */
+        display: block; /* Отображение в виде блока (вертикально) */
+    }
+}
+
+/* Стили для блока текстовой информации "info-text" */
+.info-text {
+    margin-left: 40px; /* Отступ слева */
+}
+
+.info-text h4 {
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.info p {
+    color: #86898f; /* Цвет текста */
+    margin: 0; /* Убираем внешние отступы (верхний и нижний) */
+    font-style: italic; /* Курсив */
+    font-weight: bold; /* Жирный текст */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Стили для контейнера "container" */
+.container {
+    max-width: 750px; /* Максимальная ширина контейнера */
+    margin: auto; /* Выравнивание по центру по горизонтали */
+    padding-top: 30px; /* Отступ сверху */
+}
+
+/* Здесь закомментированный код, который не влияет на структуру стилей */
+
+/* Стили для разных фоновых цветов */
+.bg-yellow {
+    background: #fff9dc; /* Желтый фон */
+}
+
+.bg-green {
+    background: #e5ffe7; /* Зеленый фон */
+}
+
+.bg-red {
+    background: #ffe5e5; /* Красный фон */
+}
+
+/* Стили для карточек "card" */
+.card {
+    padding: 15px 20px; /* Внутренние отступы */
+    margin-bottom: 20px; /* Отступ снизу */
+    border-radius: 20px; /* Скругленные углы */
+}
+
+.card h2 {
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+/* Стили для списка "list" */
+.list {
+    padding: 0 20px; /* Внутренние отступы слева и справа */
+}
+
+.list li {
+    color: #86898f; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для таблицы "table" */
+.table {
+    width: 100%; /* Ширина 100% */
+}
+
+.table td {
+    padding-bottom: 10px; /* Отступ снизу */
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86898f; /* Цвет текста для определенных ячеек */
+}
+
+/* Стили для списка ссылок "link-list" */
+.link-list {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.link-list li {
+    margin-bottom: 10px; /* Отступ снизу */
+    padding-bottom: 5px; /* Отступ внизу для каждого элемента */
+    border-bottom: 1px solid #ccc; /* Горизонтальная линия под каждым элементом */
+}
+
+/* Стили для заголовка "contact" */
+.contact h2 {
+    text-align: center; /* Выравнивание заголовка по центру */
+}
+
+/* Стили для формы и её элементов */
+.form-group label {
+    display: block; /* Блочное отображение */
+    font-size: 14px; /* Размер шрифта */
+    color: #86898f; /* Цвет текста */
+    
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ширина 100% */
+    box-sizing: border-box; /* Учитываем границы в общей ширине элемента */
+    border: none; /* Убираем границы */
+    background: transparent; /* Прозрачный фон */
+    border-bottom: 1px solid #ccc; /* Горизонтальная линия снизу */
+    color: #0f141e; /* Цвет текста */
+    padding: 15px 0 10px; /* Внутренние отступы */
+    outline: none; /* Убираем контур при фокусе */
+    font-family: inherit; /* Наследование шрифта */
+}
+
+/* Стили для расположения элементов в строке */
+.row {
+    display: flex; /* Отображение в виде строки (горизонтально) */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.row > .form-group {
+    width: 50%; /* Ширина половины родительского блока */
+}
+
+.row > .form-group:first-child{
+    margin-right: 20px; /* Отступ справа для последнего элемента в строке */
+}
+
+/* Стили для кнопки "btn" */
+.btn {
+    background: #0f141e; /* Фон кнопки */
+    padding: 15px 20px; /* Внутренние отступы */
+    color: #fff; /* Цвет текста */
+    border: none; /* Убираем границы */
+    font-family: inherit; /* Наследование шрифта */
+    cursor: pointer; /* Курсор в виде указателя */
+}
+
+.btn:hover {
+    opacity: 0.9; /* Изменение прозрачности при наведении */
+}
+
+/* Здесь закомментированный код, который не влияет на структуру стилей */
+
+/* Закомментированный код для позиционирования */
+/*
+.position {
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+}
+
+.box {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background: lightcoral;
+}
+*/
